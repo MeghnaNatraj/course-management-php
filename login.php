@@ -1,22 +1,15 @@
-<html>
-<head>
-<title>Check</title>
-</head>
-<body>
 <?php
 session_start();
-
 include "db.inc";
 $con= mysql_connect($hostname,$username,$password)or print("connection error");
 mysql_select_db($database) or print("Cannot db");
 if (isset($_GET['uid'])&&isset($_GET['pwd']))
-
 {
    $un = htmlspecialchars($_GET['uid']);
    $pwd = htmlspecialchars($_GET['pwd']);
    $flag=0;
-   
-   $sql="select * from login";
+    header('Location: admin_menu.php');
+   $sql='select * from login';
    $result = mysql_query($sql) or die(mysql_error());
    while($row = mysql_fetch_array($result)) 
   {
@@ -48,5 +41,3 @@ if (isset($_GET['uid'])&&isset($_GET['pwd']))
               }
 }     
 ?>
-</body>
-</html>

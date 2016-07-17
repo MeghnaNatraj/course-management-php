@@ -1,0 +1,17 @@
+FOR JAVA
+Check if SQL is running in MAMP
+Also check port as 3036
+Download and Import the mysql and java connector and add it as an external jar to the java project.
+Run as java application
+
+FOR PHP
+Install MAMPS
+Set the Congigs to 80,3036
+Set password for MySQL to root
+Create a database called 7thsem and import the 7thsem.sql
+
+To start project open start.php
+
+Sample User
+1MS10CS067
+cs067

@@ -1,6 +1,6 @@
 <?php
   $username="root";
   $hostname="localhost";
-  $password="";
+  $password="root";
   $database="7thsem";
 ?>
